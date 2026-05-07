@@ -1,12 +1,5 @@
-// App.js
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import {
-  CheckCircle,
-  Circle,
-  Inbox,
-  Plus,
-  Trash2
-} from "lucide-react-native";
+import { CheckCircle, Circle, Inbox, Plus, Trash2 } from "lucide-react-native";
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -20,7 +13,6 @@ import {
   View,
 } from "react-native";
 
-// Storage key constant
 const STORAGE_KEY = "@taskflow_tasks";
 
 const App = () => {
@@ -28,7 +20,7 @@ const App = () => {
   const [newTaskTitle, setNewTaskTitle] = useState("");
   const [isLoading, setIsLoading] = useState(true);
 
-  // Load tasks from AsyncStorage on app start
+  // Load tasks from AsyncStorage
   useEffect(() => {
     loadTasks();
   }, []);
@@ -46,20 +38,6 @@ const App = () => {
       const storedTasks = await AsyncStorage.getItem(STORAGE_KEY);
       if (storedTasks !== null) {
         setTasks(JSON.parse(storedTasks));
-      } else {
-        // Add sample tasks for first-time users
-        const sampleTasks = [
-          { id: "1", title: "Welcome to TaskFlow!", completed: false },
-          {
-            id: "2",
-            title: "Your tasks are saved automatically",
-            completed: false,
-          },
-          { id: "3", title: "Try completing me", completed: true },
-          { id: "4", title: "Add your own tasks", completed: false },
-        ];
-        setTasks(sampleTasks);
-        await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(sampleTasks));
       }
     } catch (error) {
       console.error("Error loading tasks:", error);
