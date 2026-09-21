@@ -1,0 +1,12 @@
+## This file must *NOT* be checked into Version Control Systems,
+# as it contains information specific to your local configuration.
+#
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+#Sat Jul 18 21:06:54 PST 2026
+sdk.dir=C\:\\Users\\Lazarte\\AppData\\Local\\Android\\Sdk
+HTTPSMS_API_KEY_1=uk_mvJTN18JB1LtZYy2_oDQPbqFPi_V_NN60GfHUJsF1Vc2pL-WtYQ5LfDjRwhGKj9t
+HTTPSMS_API_KEY_2=uk_aZtZIiyXlXAhR7irl20P983eDe8qPeczB8jBkT8p2WmHA9daQi8WIjKFSVBl7FzQ
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1menRlbmpyd3RmanNnZWJtdmRhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MjcxOTgxMSwiZXhwIjoyMDk4Mjk1ODExfQ.Xs96smUK9DGSzDBrsehHaJKnYaSrDROJWMRnXVUM3jE
+# local.properties (already gitignored)
